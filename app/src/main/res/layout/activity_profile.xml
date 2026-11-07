@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.im.kiai.ui.home.MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_soft"
+        android:fitsSystemWindows="true"
+        android:elevation="0dp"
+        app:elevation="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="24dp"
+            android:gravity="right"
+            android:paddingVertical="16dp">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="0dp"
+                android:minHeight="?actionBarSize"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@color/blue_soft"
+                android:paddingEnd="16dp"/>
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/logo_kiai"
+                android:layout_marginHorizontal="10dp"
+                android:paddingTop="8dp"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_bg_shape"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/ic_profile"
+                android:background="@drawable/bg_circle"
+                android:backgroundTint="@color/white"
+                app:tint="@color/outline"
+                android:layout_marginVertical="24dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text"
+                android:textSize="24sp"
+                android:text="Abi Rahardiansyah"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:id="@+id/tv_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/text_passive"
+                android:textStyle="bold"
+                android:layout_marginTop="4dp"
+                android:text="Assalamualaikum@gmail.com" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/field_background"
+                android:layout_marginTop="80dp"
+                android:layout_marginHorizontal="30dp"/>
+            <TextView
+                android:id="@+id/tv_ubah_profile"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Ubah Profil"
+                android:textColor="@color/blue"
+                android:textSize="18sp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?selectableItemBackground"
+                android:gravity="center_vertical|center_horizontal"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/field_background"
+                android:layout_marginHorizontal="30dp"/>
+            <TextView
+                android:id="@+id/tv_ubah_password"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Ubah Password"
+                android:textColor="@color/blue"
+                android:textSize="18sp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?selectableItemBackground"
+                android:gravity="center_vertical|center_horizontal"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/field_background"
+                android:layout_marginHorizontal="30dp"/>
+            <TextView
+                android:id="@+id/tv_logout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Logout"
+                android:textColor="@color/red"
+                android:textSize="18sp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?selectableItemBackground"
+                android:gravity="center_vertical|center_horizontal"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/field_background"
+                android:layout_marginHorizontal="30dp"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">kiai</string>
+    <string name="title_activity_kajian_location">KajianLocationActivity</string>
+</resources>
